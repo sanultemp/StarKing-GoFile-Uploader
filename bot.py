@@ -16,13 +16,11 @@ Bot = Client(Config.SESSION_NAME, bot_token=Config.BOT_TOKEN, api_id=Config.API_
 @Bot.on_message(filters.command("start"))
 async def start_handler(_, cmd):
     await cmd.reply_text(
-        "HI, I am Cloud Uploads Manager Bot!\n\nI can Do a Lot of Things, Check > /help <",
+        "HI, I am StarKing Cloud Uploads Manager Bot!\n\nI can Do a Lot of Things, Check > /help <",
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("Developer", url="https://t.me/AbirHasan2005"),
-                 InlineKeyboardButton("Support Group", url="https://t.me/linux_repo")],
-                [InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")],
-                [InlineKeyboardButton("Bot's Source Code", url="https://github.com/AbirHasan2005/Cloud-UPManager-Bot")]
+                [InlineKeyboardButton("PSALK", url="https://t.me/PSALK")],
+                [InlineKeyboardButton("FlixCinemaLK", url="https://t.me/Flix_CinemaSL")]
             ]
         )
     )
@@ -36,8 +34,8 @@ async def help_handler(_, cmd):
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("Support Group", url="https://t.me/linux_repo"),
-                 InlineKeyboardButton("Developer", url="https://t.me/AbirHasan2005")],
+                [InlineKeyboardButton("PSALK", url="https://t.me/PSALK"),
+                 InlineKeyboardButton("FlixCinemaLK", url="https://t.me/Flix_CinemaSL")],
                 [InlineKeyboardButton("Delete GoFile.io File", switch_inline_query_current_chat="!godel ")],
                 [InlineKeyboardButton("Delete Streamtape File (Admin Only)",
                                       switch_inline_query_current_chat="!stdel ")],
@@ -83,8 +81,8 @@ async def answer(bot, query: InlineQuery):
                 thumb_url="https://i.imgur.com/6jZsMYG.png",
                 reply_markup=InlineKeyboardMarkup(
                     [
-                        [InlineKeyboardButton("Support Group", url="https://t.me/linux_repo"),
-                         InlineKeyboardButton("Developer", url="https://t.me/AbirHasan2005")],
+                        [InlineKeyboardButton("PSALK", url="https://t.me/PSALK"),
+                         InlineKeyboardButton("FlixCinemaLK", url="https://t.me/Flix_CinemaSL")],
                         [InlineKeyboardButton("Delete GoFile.io File", switch_inline_query_current_chat="!godel ")],
                         [InlineKeyboardButton("Delete Streamtape File (Admin Only)",
                                               switch_inline_query_current_chat="!stdel ")],
@@ -119,8 +117,8 @@ async def answer(bot, query: InlineQuery):
                     ),
                     reply_markup=InlineKeyboardMarkup(
                         [
-                            [InlineKeyboardButton("Support Group", url="https://t.me/linux_repo")],
-                            [InlineKeyboardButton("Developer", url="https://t.me/linux_repo")]
+                            [InlineKeyboardButton("PSALK", url="https://t.me/PSALK")],
+                            [InlineKeyboardButton("FlixCinemaLK", url="https://t.me/Flix_CinemaSL")]
                         ]
                     )
                 )
@@ -198,8 +196,7 @@ async def answer(bot, query: InlineQuery):
                     InlineQueryResultArticle(title="Something Went Wrong!", description=f"Error: {err}",
                                              input_message_content=InputTextMessageContent(
                                                  message_text=f"Something Went Wrong!\n\n**Error:** `{err}`"),
-                                             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Support Group",
-                                                                                                      url="https://t.me/linux_repo")]]))
+                                             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("PSALK", url="https://t.me/PSALK")]]))
                 )
 
         try:
@@ -292,7 +289,7 @@ async def answer(bot, query: InlineQuery):
                                          input_message_content=InputTextMessageContent(
                                              message_text=f"Something Went Wrong!\n\n**Error:** `{err}`"),
                                          reply_markup=InlineKeyboardMarkup(
-                                             [[InlineKeyboardButton("Support Group", url="https://t.me/linux_repo")]]))
+                                             [[InlineKeyboardButton("PSALK", url="https://t.me/PSALK")]]))
             )
 
         try:
@@ -318,8 +315,8 @@ async def answer(bot, query: InlineQuery):
                     ),
                     reply_markup=InlineKeyboardMarkup(
                         [
-                            [InlineKeyboardButton("Support Group", url="https://t.me/linux_repo")],
-                            [InlineKeyboardButton("Developer", url="https://t.me/linux_repo")]
+                            [InlineKeyboardButton("PSALK", url="https://t.me/PSALK")],
+                            [InlineKeyboardButton("FlixCinemaLK", url="https://t.me/Flix_CinemaSL")]
                         ]
                     )
                 )
@@ -412,8 +409,8 @@ async def answer(bot, query: InlineQuery):
                     ),
                     reply_markup=InlineKeyboardMarkup(
                         [
-                            [InlineKeyboardButton("Support Group", url="https://t.me/linux_repo")],
-                            [InlineKeyboardButton("Developer", url="https://t.me/linux_repo")]
+                            [InlineKeyboardButton("PSALK", url="https://t.me/PSALK")],
+                            [InlineKeyboardButton("FlixCinemaLK", url="https://t.me/Flix_CinemaSL")]
                         ]
                     )
                 )
